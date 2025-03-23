@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+}
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+}
+.btn {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #2563eb;
+}
+a {
+  text-decoration: none;
+  color: tomato;
+}
+
+a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
