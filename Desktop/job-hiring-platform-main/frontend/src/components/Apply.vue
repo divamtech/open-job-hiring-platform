@@ -14,9 +14,9 @@
 </template>
 
 <script setup>
+import axios from 'axios'
 import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
-import axios from 'axios'
 
 const route = useRoute()
 const job = ref(null)
@@ -32,10 +32,21 @@ const handleFile = (e) => {
 }
 
 const submitForm = async () => {
-  const data = new FormData()
-  Object.entries(form.value).forEach(([key, val]) => data.append(key, val))
-  data.append('jobId', route.params.id)
-  await axios.post('/api/apply', data)
-  alert('Application Submitted')
-}
+  const data = new FormData();
+
+  // Append normal fields (except file)
+  Object.entries(form.value).forEach(([key, val]) => {
+    if (key !== "file") data.append(key, val);
+  });
+
+  // Append the file with the key 'resume' (as expected by backend)
+  data.append("resume", form.value.file);
+
+  // Also pass job ID
+  data.append("jobId", route.params.id);
+
+  await axios.post("/api/apply", data);
+  alert("Application Submitted");
+};
+
 </script>

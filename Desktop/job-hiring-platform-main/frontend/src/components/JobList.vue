@@ -10,8 +10,8 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
 import axios from 'axios'
+import { onMounted, ref } from 'vue'
 
 const jobs = ref([])
 onMounted(async () => {
