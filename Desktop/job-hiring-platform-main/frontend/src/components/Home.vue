@@ -1,12 +1,22 @@
 <template>
-  <div class="p-6 text-center">
-    <h1 class="text-2xl font-bold mb-4">Welcome to the Hiring Platform</h1>
+  <div class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="bg-white shadow-lg rounded-xl p-10 text-center max-w-md w-full">
+      <h1 class="text-3xl font-bold text-gray-800 mb-8">Welcome to the Hiring Platform</h1>
 
-    <router-link to="/admin/login">
-      <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
-        Admin Login
-      </button>
-    </router-link>
+      <div class="flex flex-col gap-4">
+        <router-link to="/admin/login">
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-200">
+            Admin Login
+          </button>
+        </router-link>
+
+        <router-link to="/user/login">
+          <button class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-200">
+            User Login
+          </button>
+        </router-link>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -17,12 +27,5 @@ export default {
 </script>
 
 <style scoped>
-button{
-  margin: 10px;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
+/* All styling is done with TailwindCSS classes directly in the template */
 </style>

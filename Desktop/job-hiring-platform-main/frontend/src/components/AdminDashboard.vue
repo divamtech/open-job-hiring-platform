@@ -1,10 +1,12 @@
-<!-- src/components/AdminDashboard.vue -->
 <template>
   <div>
     <h1>Admin Dashboard</h1>
     <p>Welcome, Admin!</p>
+
     <button @click="goToManageJobs">Manage Jobs</button>
     <button @click="goToManageCandidates">Manage Candidates</button>
+    <button @click="goToManageExams">Manage Exams</button>
+    <button @click="goToManageQuestions">Manage Questions</button> <!-- ✅ New Button -->
   </div>
 </template>
 
@@ -17,7 +19,13 @@ export default {
     goToManageCandidates() {
       this.$router.push("/admin/manage-candidates");
     },
-  },
+    goToManageExams() {
+      this.$router.push("/admin/manage-exams");
+    },
+    goToManageQuestions() {
+      this.$router.push("/admin/manage-questions"); // ✅ New Route
+    }
+  }
 };
 </script>
 
@@ -30,7 +38,6 @@ button {
   border: none;
   cursor: pointer;
 }
-
 button:hover {
   background-color: #45a049;
 }
