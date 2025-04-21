@@ -1,4 +1,16 @@
-# Job hiring platform
+# Open Job hiring platform
+
+If your PR will be merge on any specific peace of problem solving into the below project, we will call you for the interview.
+Below is the project details, understand the requiment and solve few problems in this project. We promote to use AI, you can use any AI tools to solve the problems of project quickly. 
+
+
+## Pull Request(PR) Specification:
+1. Fork the repo, and do changes on your branch (like yourname-FeatureName), preserve the commit history, instead of push only one commit. 
+2. Create the PR as title what and which problem of the project solves, few details about your approach.
+3. Add reviewer to the user @gauravds and @webledgerBot. 
+
+**If your PR will be merge, then we will contact you for further interview process. Make sure your profile have your contact details like email or website link.**
+
 
 ## Project Details
 
@@ -12,7 +24,7 @@
 
 ### this product flow should be
 
-1. show all job openings
+1. Show all job openings
 2. Detail of Jobs with hiring process steps details
 3. Apply for the job with your contact details and CV, cover latter, portfolio and job title for which you are apply for. According to selected job you have the immediately test of aptitude, reasoning and technical exam: passing 50%, no negative marking;
 4. if passed on previous step you will get assignment immediately to submit within 7 days
